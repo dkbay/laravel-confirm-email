@@ -73,7 +73,7 @@ trait RegistersUsers
         event(new Confirmed($user));
 
         return $this->confirmed($user)
-            ?: redirect($this->redirectAfterConfirmationPath())->with('confirmation', __('confirmation::confirmation.confirmation_successful'));
+            ?: redirect($this->redirectAfterConfirmationPath())->with('confirmation', __('confirmation.confirmation_successful'));
     }
 
     /**
